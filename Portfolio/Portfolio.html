@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ralph Cange - Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- My styles -->
+    <link rel="stylesheet" href="./style3.css">
+  </head>
+  <body>
+
+    <header>
+      <h2 class="logo"><span>R</span>alph</h2>
+      <nav class="navigation">
+        <a href="../Home.html">Home</a>
+        <a href="../about/About.html">About</a>
+        <a href="./Portfolio.html" class="active">Portfolio</a>
+        <a href="../Contacts/Contact.html">Contacts</a>
+      </nav>
+    </header>
+
+    <section class="page-title">
+      <h1>My <span>Projects</span></h1>
+      <p>Here are some of the projects I have worked on.</p>
+    </section>
+
+    <div class="carousel-wrapper">
+      <div id="projectCarousel" class="carousel slide" data-bs-ride="false">
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="card">
+              <i class="fa-solid fa-users card-icon"></i>
+              <span class="card-tag">Team Project</span>
+              <h3>EOS Group Project</h3>
+              <p>A collaborative group project for CSCI331 in Spring 2026, built with teammates.</p>
+              <p class="tech-label">CSCI331 &bull; Spring 2026</p>
+              <a href="https://github.com/xHaroonAhmed/CSCI331_EOS_Group3_Spring2026/tree/main/Project2_BIClass_StarSchema" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card">
+              <i class="fa-solid fa-code card-icon"></i>
+              <span class="card-tag">Team Project</span>
+              <h3>PPG4 Group Project</h3>
+              <p>CSCI331 project from Spring 2026 focused on group programming.</p>
+              <p class="tech-label">CSCI331 &bull; Spring 2026</p>
+              <a href="https://github.com/xHaroonAhmed/CSCI331_PPG4_Spring2026/tree/main/Project%201/Ralph%20Cange" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card">
+              <i class="fa-solid fa-music card-icon"></i>
+              <span class="card-tag">Research Paper</span>
+              <h3>Audio Source Separation</h3>
+              <p>An independent research paper exploring the Cocktail Party Problem and how algorithms like Demucs and MDX23 separate audio sources using deep neural networks.</p>
+              <p class="tech-label">Deep Learning &bull; Signal Processing</p>
+              <a href="./Audio_Source_Separation___Independent_Research_Project.pdf" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-file-pdf"></i> View Paper
+              </a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card">
+              <i class="fa-solid fa-book card-icon"></i>
+              <span class="card-tag">C++ Project</span>
+              <h3>Journal &amp; Message Storage</h3>
+              <p>A C++ program that stores and loads phone messages using structs, file I/O, and a custom FileManager. Demonstrates object-oriented design with structs and operator overloading.</p>
+              <p class="tech-label">C++ &bull; File I/O &bull; OOP</p>
+              <a href="https://github.com/rcange-14/MAC125/tree/main/Journal" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card">
+              <i class="fa-solid fa-headphones card-icon"></i>
+              <span class="card-tag">C++ Project</span>
+              <h3>Improved Music Player</h3>
+              <p>A C++ music player project currently in development. Built in Visual Studio as part of exploring audio programming concepts.</p>
+              <p class="tech-label">C++ &bull; Visual Studio</p>
+              <a href="https://github.com/rcange-14/MAC125/tree/main/Music%20Player" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
