@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 2em;
+  color: skyblue;
+  cursor: default;
+}
+
+.logo span {
+  color: darkcyan;
+}
+
+nav.navigation {
+  margin-left: -300px;
+}
+
+nav.navigation > a {
+  font-size: 1.1em;
+  color: darkcyan;
+  text-decoration: none;
+  margin-right: 40px;
+  font-weight: 500;
+}
+
+nav.navigation a:hover,
+nav.navigation a.active {
+  color: skyblue;
+}
+
+nav.navigation a {
+  position: relative;
+}
+
+nav.navigation a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: skyblue;
+  transition: width 0.3s ease;
+}
+
+nav.navigation a:hover::after,
+nav.navigation a.active::after {
+  width: 100%;
+}
+
+/* ── Page layout ── */
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 120px 100px 60px;
+}
+
+.content {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 3em;
+  color: darkcyan;
+  margin-bottom: 10px;
+}
+
+.content h2 span {
+  color: skyblue;
+}
+
+.content > p {
+  font-size: 1.05em;
+  color: darkcyan;
+  margin-bottom: 24px;
+}
+
+/* ── Social icons ── */
+.social-icons {
+  margin-bottom: 32px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: darkcyan;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin: 0 10px;
+  font-size: 1.1em;
+  transition: .3s;
+}
+
+.social-icons a:hover {
+  background: skyblue;
+  transform: translateY(-4px);
+}
+
+.social-icons a i {
+  font-size: 1.1em;
+}
+
+/* ── Contact Form ── */
+.contact-form {
+  text-align: left;
+  background: #f9fefe;
+  border-radius: 14px;
+  padding: 36px 40px;
+  box-shadow: 0 4px 20px rgba(0, 139, 139, 0.10);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 0.85em;
+  font-weight: 600;
+  color: darkcyan;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px 14px;
+  border: 1.5px solid #b2e4ea;
+  border-radius: 8px;
+  font-size: 0.95em;
+  color: #333;
+  background: #fff;
+  transition: border-color .25s, box-shadow .25s;
+  outline: none;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: skyblue;
+  box-shadow: 0 0 0 3px rgba(135, 206, 235, 0.25);
+}
+
+.form-group input.input-error,
+.form-group textarea.input-error {
+  border-color: #e05a5a;
+}
+
+.error-msg {
+  display: none;
+  font-size: 0.78em;
+  color: #e05a5a;
+  margin-top: 5px;
+}
+
+/* ── Submit button ── */
+.submit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  width: 100%;
+  justify-content: center;
+  padding: 12px;
+  background: skyblue;
+  color: #fff;
+  border: 2px solid skyblue;
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.submit-btn:hover {
+  background: transparent;
+  color: skyblue;
+}
+
+/* ── Success message ── */
+.success-msg {
+  margin-top: 30px;
+  padding: 28px;
+  background: #e6faf5;
+  border: 1.5px solid #5ecfb1;
+  border-radius: 12px;
+  text-align: center;
+  color: darkcyan;
+}
+
+.success-msg i {
+  font-size: 2.5em;
+  color: #2bbf99;
+  margin-bottom: 12px;
+}
+
+.success-msg p {
+  font-size: 1.05em;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 100px 24px 40px;
+    position: fixed;
+  }
+  .contact-form {
+    padding: 24px 20px;
+  }
+}
